@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
-                    
-USER gitpod
 
-RUN sudo apt-get -q update \
-    && sudo apt-get install -yq hugo \
-    && sudo rm -rf /var/lib/apt/lists/*
+# Install custom tools, runtime, etc.
+RUN sudo apt-get update \
+    && sudo apt-get install -y \
+        hugo \
+    && rm -rf /var/lib/apt/lists/*
