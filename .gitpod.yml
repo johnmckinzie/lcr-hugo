@@ -2,5 +2,4 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: Update GitHub email
-    command: git config user.email "johnmckinzie@users.noreply.github.com"
+  - init: git config user.email "johnmckinzie@users.noreply.github.com"
